@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let user = {
+        name: "Mukil",
+        age: 30,
+        gender: "male",
+        display: function (){
+            alert("User name is " + this.name)
+        }
+    }
+    console.log(user)
+    // user = {
+    //     name: "Mukil",
+    //     age: 30,
+    //     gender: "male",
+    //     qualification: "degree",
+    //     display: function (){
+    //         alert("User name is " + this.name)
+    //     }
+    // }
+    user = {...user, qualification: "Degree"}
+    console.log(user)
+</script>
+</html>

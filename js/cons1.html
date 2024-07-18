@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Constructors are used for defining an Object Structure/template
+    //Based on the template we can create any number of Objects repeatedly
+    function Employee(name, dept, age, experience){
+        this.name = name
+        this.dept = dept
+        this.age = age
+        this.experience = experience
+    }
+    Employee.prototype.section = "II"
+
+    const e1 = new Employee("Mukilan", "Electronics", 35, 10)    
+    console.log(e1)
+    console.log(e1.section)
+    
+    // const Employee = {
+    //     name: "Mukilan",
+    //     age: 30
+    // }
+    // Employee.dept = "Electronics"
+    // console.log(Employee)
+</script>
+</html>

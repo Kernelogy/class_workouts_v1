@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user = {
+            firstName : "Karumukilan",
+            lastName : "Subbiah",
+            marks: {
+                sslc: 700,
+                hsc: 800,
+                degree: 7.5
+            },
+            fullName: function () {
+                return this.firstName + " " + this.lastName
+            }
+        }
+        console.log(user.firstName)
+        console.log(user.marks.hsc)
+        console.log(user.fullName())
+    </script>
+</body>
+</html>
